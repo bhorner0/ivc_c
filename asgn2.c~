@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct bruh {
+  char namef[50];
+  char namel[50];
+  float hours;
+  float rate;
+  float fedtax;
+  float statetax;
+};
+
+int getman(struct bruh man) {
+  printf("Give First Name ('exit' to quit): ");
+  char buff[50];
+  scanf("%s",buff);
+  if ( strcmp(buff,"exit") == 0 ) {
+    printf("peace mah dood...\n");
+    return 1;
+  }
+  strcpy( man.namef, buff);
+  printf("%s\n",man.namef);
+  return 0;
+}
+
+void main () {
+  struct bruh mydood;
+  getman(mydood);
+}
