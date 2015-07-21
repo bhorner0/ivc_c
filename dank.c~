@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void main() {
+
+  int big, small = 0;
+  int temp;
+
+  //get first int
+
+  printf("Giff integer pls: ");
+  scanf("%d", &temp);
+  big = temp;
+  small = temp;
+  printf("%d %d", big,small);
+}
